@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "ded1af25-f4b5-443f-a3bf-391197fa5c57",
+		"name": "BlobStorageApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Container",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"containerName\": \"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7117/api/container/create",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7117",
+					"path": [
+						"api",
+						"container",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Container",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"containerName\": \"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7117/api/container/delete",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7117",
+					"path": [
+						"api",
+						"container",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Containers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7117/api/container/all",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7117",
+					"path": [
+						"api",
+						"container",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Blobs Info In Container",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7117/api/blob/all?containername=",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7117",
+					"path": [
+						"api",
+						"blob",
+						"all"
+					],
+					"query": [
+						{
+							"key": "containername",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Blob To Container",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "containerName",
+							"value": "test1",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:7117/api/blob/upload?containername=test",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7117",
+					"path": [
+						"api",
+						"blob",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "containername",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Blob In Container",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"containerName\": \"test\",\r\n    \"blobName\": \"test.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7117/api/blob/delete",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7117",
+					"path": [
+						"api",
+						"blob",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
