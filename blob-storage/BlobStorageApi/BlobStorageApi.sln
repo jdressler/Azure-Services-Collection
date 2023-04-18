@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobStorageApi.Web", "BlobStorageApi.Web\BlobStorageApi.Web.csproj", "{44E24954-1C3E-479C-9901-17D543B12E9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobStorageApi.Services", "BlobStorageApi.Services\BlobStorageApi.Services.csproj", "{4196E592-1DD7-465A-B712-EEFBA44D467B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobStorageApi.Contracts", "BlobStorageApi.Contracts\BlobStorageApi.Contracts.csproj", "{4E7AE509-054A-4E78-BF06-9F7876B7629F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44E24954-1C3E-479C-9901-17D543B12E9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44E24954-1C3E-479C-9901-17D543B12E9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44E24954-1C3E-479C-9901-17D543B12E9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44E24954-1C3E-479C-9901-17D543B12E9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4196E592-1DD7-465A-B712-EEFBA44D467B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4196E592-1DD7-465A-B712-EEFBA44D467B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4196E592-1DD7-465A-B712-EEFBA44D467B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4196E592-1DD7-465A-B712-EEFBA44D467B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E7AE509-054A-4E78-BF06-9F7876B7629F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E7AE509-054A-4E78-BF06-9F7876B7629F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E7AE509-054A-4E78-BF06-9F7876B7629F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E7AE509-054A-4E78-BF06-9F7876B7629F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68CE0916-E500-4E08-BA84-F4FF60A5E0C7}
+	EndGlobalSection
+EndGlobal
